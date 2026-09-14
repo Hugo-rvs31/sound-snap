@@ -20,7 +20,8 @@ function App() {
     {
       name: "Bird",
       image: BirdImage,
-      sound: BirdSound,
+      sound: Bir,
+      sound: Bir,
     },
     {
       name: "Rain",
