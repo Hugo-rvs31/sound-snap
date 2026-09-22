@@ -71,8 +71,10 @@ function App() {
   ];
   return (
     <div className="app">
-      <h1>SoundSnap</h1>
-      <p>Click on an image to hear its sound!</p>
+      <div className="box-title">
+        <h1>SoundSnap</h1>
+        <p>Click on an image to hear its sound!</p>
+      </div>
 
       <div className="box-sound">
         {sounds.map((sound) => (

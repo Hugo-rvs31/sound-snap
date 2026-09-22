@@ -1,6 +1,29 @@
 .app {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  .box-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #b2ccb7;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 30px;
+    gap: 10px;
+    border: solid white 2px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  }
   .box-sound {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 40px;
+    background: #b2ccb7;
+    padding: 30px 10px;
+    margin: 30px;
+    border-radius: 10px;
+    border: solid white 2px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
   }
 }
