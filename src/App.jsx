@@ -20,6 +20,8 @@ import technoPartyImage from "./assets/images/techno-party.jpg";
 import wilhelmScreamImage from "./assets/images/wilhelm-scream.jpg";
 import psychoViolinImage from "./assets/images/psycho-violin.jpg";
 import hallelujahImage from "./assets/images/hallelujah.webp";
+import toiletFlushImage from "./assets/images/toilet-flush.jpg";
+import vacuumCleanerImage from "./assets/images/vacuum-cleaner.jpg";
 
 import catSound from "./assets/sounds/cat-meow.mp3";
 import dogSound from "./assets/sounds/dog-bark.mp3";
@@ -40,6 +42,8 @@ import technoPartySound from "./assets/sounds/techno-party.mp3";
 import wilhelmScreamSound from "./assets/sounds/wilhelm-scream.mp3";
 import psychoViolinSound from "./assets/sounds/psycho-violin.mp3";
 import hallelujahSound from "./assets/sounds/hallelujah.mp3";
+import toiletFlushSound from "./assets/sounds/toilet-flush.mp3";
+import vacuumCleanerSound from "./assets/sounds/vacuum-cleaner.mp3";
 
 function App() {
   const sounds = [
@@ -47,96 +51,127 @@ function App() {
       name: "Cat",
       image: catImage,
       sound: catSound,
+      className: "cat",
     },
     {
       name: "Dog",
       image: dogImage,
       sound: dogSound,
+      className: "dog",
     },
     {
       name: "Car Engine Start",
       image: carImage,
       sound: carSound,
+      className: "car-engine-start",
     },
     {
       name: "Bird",
       image: birdImage,
       sound: birdSound,
+      className: "bird",
     },
     {
       name: "Rain",
       image: rainImage,
       sound: rainSound,
+      className: "rain",
     },
     {
       name: "Phone ring",
       image: phoneImage,
       sound: phoneSound,
+      className: "phone-ring",
     },
     {
       name: "Door",
       image: doorImage,
       sound: doorSound,
+      className: "door",
     },
     {
       name: "Keyboard",
       image: keyboardImage,
       sound: keyboardSound,
+      className: "keyboard",
     },
     {
       name: "Car Horn",
       image: carHornImage,
       sound: carHornSound,
+      className: "car-horn",
     },
     {
       name: "Creepy music box",
       image: creepyMusicBoxImage,
       sound: creepyMusicBoxSound,
+      className: "creepy-music-box",
     },
     {
       name: "heart monitor",
       image: heartMonitorImage,
       sound: heartMonitorSound,
+      className: "heart-monitor",
     },
     {
       name: "nuclear bomb",
       image: nuclearBombImage,
       sound: nuclearBombSound,
+      className: "nuclear-bomb",
     },
     {
       name: "punch",
       image: punchImage,
       sound: punchSound,
+      className: "punch",
     },
     {
       name: "scream",
       image: screamImage,
       sound: screamSound,
+      className: "scream",
     },
     {
       name: "sneeze",
       image: sneezeImage,
       sound: sneezeSound,
+      className: "sneeze",
     },
     {
       name: "techno party",
       image: technoPartyImage,
       sound: technoPartySound,
+      className: "techno-party",
     },
     {
       name: "Wilhelm scream",
       image: wilhelmScreamImage,
       sound: wilhelmScreamSound,
+      className: "wilhelm-scream",
     },
     {
       name: "Psycho violin",
       image: psychoViolinImage,
       sound: psychoViolinSound,
+      className: "psycho-violin",
     },
     {
       name: "Hallelujah !",
       image: hallelujahImage,
       sound: hallelujahSound,
+      className: "hallelujah",
+    },
+    {
+      name: "Toilet flush !",
+      image: toiletFlushImage,
+      sound: toiletFlushSound,
+      className: "toilet-flush",
+    },
+    {
+      name: "Vacuum cleaner !",
+      image: vacuumCleanerImage,
+      sound: vacuumCleanerSound,
+      className: "vacuum-cleaner",
     },
   ];
   return (
@@ -153,6 +188,7 @@ function App() {
             image={sound.image}
             name={sound.name}
             sound={sound.sound}
+            className={sound.className}
           />
         ))}
       </div>

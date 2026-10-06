@@ -2,7 +2,7 @@ import "./SoundButton.scss";
 
 let currentAudio = null;
 
-const SoundButton = ({ image, name, sound }) => {
+const SoundButton = ({ image, name, sound, className }) => {
   const playSound = () => {
     if (currentAudio) {
       currentAudio.pause();
@@ -15,7 +15,7 @@ const SoundButton = ({ image, name, sound }) => {
 
   return (
     <button onClick={playSound}>
-      <img src={image} alt={name} />
+      <img className={className} src={image} alt={name} />
       <h2>{name}</h2>
     </button>
   );
