@@ -24,25 +24,25 @@
     border-radius: 10px;
     border: solid white 2px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    justify-items: center;
+    gap: 40px;
+    background: #b2ccb7;
+    padding: 30px 70px;
+    margin: 20px 30px;
+    border: 1px solid white;
 
-    @media screen and (max-width: 1500px) {
+    @media screen and (max-width: 1600px) {
       grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     @media screen and (max-width: 1200px) {
       grid-template-columns: 1fr 1fr 1fr;
     }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 900px) {
       grid-template-columns: 1fr 1fr;
     }
     @media screen and (max-width: 620px) {
       grid-template-columns: 1fr;
+      padding: 20px 30px;
     }
-
-    justify-items: center;
-    gap: 40px;
-    background: #b2ccb7;
-    padding: 30px 70px;
-    margin: 30px 50px;
-    border: 1px solid white;
   }
 }
